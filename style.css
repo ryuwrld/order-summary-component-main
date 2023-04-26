@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-bright-blue: hsl(245, 75%, 52%);
+
+    --clr-neutral-v-pale-blue: hsl(225, 100%, 98%);
+    --clr-neutral-desat-blue: hsl(224, 23%, 55%);
+    --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+
+    --ff-default: 'Red Hat Display', sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body {
+    background: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: var(--ff-default);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    background: white;
+    max-width: 450px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 20px 25px 15px rgba(0,0,0,0.05),
+                0px 40px 38px 15px rgba(0,0,0,0.1);
+  }
+
+  .card-img {
+    position: relative;
+  }
+
+  .card-body {
+    font-size: 1rem;
+    color: var(--clr-neutral-desat-blue);
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .order-summary {
+    font-weight: var(--fw-black);
+    font-size: 1.7rem;
+    color: var(--clr-neutral-dark-blue);
+  }
+
+  .order-summary-text {
+    padding: 1.33rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .payment-plan {
+    background: var(--clr-neutral-v-pale-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin: .9rem;
+    margin-bottom: 2rem;
+    border-radius: .75rem;
+  }
+
+  .plan-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    gap: .1rem;
+    text-align: left;
+  }
+
+  .plan-left {
+    display: flex;
+  }
+
+  .annual-plan {
+    font-weight: var(--fw-black);
+    color: var(--clr-neutral-dark-blue);
+  }
+
+
+  .plan-right a {
+    font-weight: var(--fw-bold);
+    font-size: .9rem;
+    opacity: 1;
+    transition: all .2s ease;
+  }
+
+  .plan-right:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: .8rem;
+    padding: 1rem;
+    padding-top: 0;
+  }
+
+  .btn {
+    all: unset;
+    display: block;
+    cursor: pointer;
+    border-radius: .66rem;
+    font-size: .95rem;
+    font-weight: var(--fw-black);
+    padding: .9rem;
+    gap: 1rem;
+  }
+
+  .pay-next {
+    background: var(--clr-primary-bright-blue);
+    color: white;
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.05),
+                0 15px 20px 0 rgba(0,0,0,0.1);
+    opacity: 1;
+    transition: all 2s ease;
+  }
