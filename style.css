@@ -65,6 +65,7 @@
 
   body {
     background: url(/images/pattern-background-desktop.svg);
+    background-color: var(--clr-primary-pale-blue);
     background-repeat: no-repeat;
     background-size: contain;
     font-family: var(--ff-default);
@@ -187,17 +188,16 @@
     box-shadow: 0 15px 20px 0 rgba(0,0,0,0.05),
                 0 15px 20px 0 rgba(0,0,0,0.1);
     opacity: 1;
-    transition: all .2s ease;
+    transition: all .1s ease;
   }
 
   .cancel {
     color: var(--clr-neutral-desat-blue);
-    transition: all .2s ease;
+    transition: all .1s ease;
   }
 
   .cancel:hover {
     color: var(--clr-neutral-dark-blue);
-    transition: all .2s ease;
   }
 
   .pay-next:hover {
