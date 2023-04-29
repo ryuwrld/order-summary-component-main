@@ -92,18 +92,21 @@
     color: var(--clr-neutral-desat-blue);
     text-align: center;
     padding: 2rem;
-    padding-bottom: 1rem;
+
   }
 
   .order-summary {
     font-weight: var(--fw-black);
     font-size: 1.7rem;
     color: var(--clr-neutral-dark-blue);
+    padding-top: .5rem;
   }
 
   .order-summary-text {
-    padding: 1.33rem;
-    padding-top: 0.5rem;
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
     font-size: 1rem;
   }
 
@@ -156,8 +159,6 @@
     justify-content: center;
     text-align: center;
     gap: .8rem;
-    padding: 1rem;
-    padding-top: 0;
   }
 
   .btn {
@@ -177,5 +178,19 @@
     box-shadow: 0 15px 20px 0 rgba(0,0,0,0.05),
                 0 15px 20px 0 rgba(0,0,0,0.1);
     opacity: 1;
-    transition: all 2s ease;
+    transition: all .2s ease;
+  }
+
+  .cancel {
+    color: var(--clr-neutral-desat-blue);
+    transition: all .2s ease;
+  }
+
+  .cancel:hover {
+    color: var(--clr-neutral-dark-blue);
+    transition: all .2s ease;
+  }
+
+  .pay-next:hover {
+    opacity: 0.7;
   }
