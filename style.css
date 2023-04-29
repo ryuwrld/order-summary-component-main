@@ -148,7 +148,7 @@
     transition: all .2s ease;
   }
 
-  .plan-right:hover {
+  .plan-right a:hover {
     opacity: 0.8;
     text-decoration: none;
   }
